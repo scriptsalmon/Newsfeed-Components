@@ -57,10 +57,13 @@ function menuMaker () {
   return menu;
 }
 
+menuItems.forEach(item => {
+  // document.querySelector('li').textContent(item);
+  const li = document.createElement('li');
+  console.log(item);
+  return li.textContent(item);
 
-// const menuItemsArr = menuItems.map(item => {
-//   return document.createElement('li');
-// })
+})
 
 
-menuMaker();
+menuMaker(menuItemArr);
